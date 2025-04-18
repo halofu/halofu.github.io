@@ -4,6 +4,38 @@
   
   
   <entry>
+    <title>严格部署</title>
+    <link href="/2025/04/18/%E4%B8%A5%E6%A0%BC%E9%83%A8%E7%BD%B2/"/>
+    <url>/2025/04/18/%E4%B8%A5%E6%A0%BC%E9%83%A8%E7%BD%B2/</url>
+    
+    <content type="html"><![CDATA[<p>在 Hexo 部署过程中，默认策略和严格同步策略（删除远程多余文件）的行为取决于使用的 deployer（部署插件），大部分的默认策略都是严格模式。</p><h2 id="默认策略：保留远程多余文件"><a href="#默认策略：保留远程多余文件" class="headerlink" title="默认策略：保留远程多余文件"></a>默认策略：保留远程多余文件</h2><p>示例：如果远程有 old-file.html 而本地 public&#x2F; 中没有，该文件会保留。</p><h2 id="严格策略：删除远程多余文件"><a href="#严格策略：删除远程多余文件" class="headerlink" title="严格策略：删除远程多余文件"></a>严格策略：删除远程多余文件</h2><p>如果需要远程目录完全匹配本地内容（删除多余文件），则使用严格模式。</p><h2 id="以博客部署为例"><a href="#以博客部署为例" class="headerlink" title="以博客部署为例"></a>以博客部署为例</h2><h3 id="Git-部署"><a href="#Git-部署" class="headerlink" title="Git 部署"></a>Git 部署</h3><ul><li>插件: hexo-deployer-git</li><li>配置: 默认强制推送</li><li>源码参考： <a href="https://github.com/hexojs/hexo-deployer-git/blob/master/lib/deployer.js">https://github.com/hexojs/hexo-deployer-git/blob/master/lib/deployer.js</a></li></ul><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">push</span>(<span class="hljs-params">repo</span>) &#123;<br>    <span class="hljs-keyword">await</span> <span class="hljs-title function_">setNameEmail</span>();<br>    <span class="hljs-keyword">await</span> <span class="hljs-title function_">git</span>(<span class="hljs-string">&#x27;add&#x27;</span>, <span class="hljs-string">&#x27;-A&#x27;</span>);<br>    <span class="hljs-keyword">await</span> <span class="hljs-title function_">git</span>(<span class="hljs-string">&#x27;commit&#x27;</span>, <span class="hljs-string">&#x27;-m&#x27;</span>, message).<span class="hljs-title function_">catch</span>(<span class="hljs-function">() =&gt;</span> &#123;<br>      <span class="hljs-comment">// Do nothing. It&#x27;s OK if nothing to commit.</span><br>    &#125;);<br>    <span class="hljs-keyword">await</span> <span class="hljs-title function_">git</span>(<span class="hljs-string">&#x27;push&#x27;</span>, <span class="hljs-string">&#x27;-u&#x27;</span>, repo.<span class="hljs-property">url</span>, <span class="hljs-string">&#x27;HEAD:&#x27;</span> + repo.<span class="hljs-property">branch</span>, <span class="hljs-string">&#x27;--force&#x27;</span>);<br>  &#125;<br></code></pre></td></tr></table></figure><h3 id="SFTP"><a href="#SFTP" class="headerlink" title="SFTP"></a>SFTP</h3><ul><li>插件: hexo-deployer-git</li><li>配置: 默认不覆盖现有的文件</li><li>文档参考：<a href="https://hexo.io/zh-cn/docs/one-command-deployment.html#SFTP">https://hexo.io/zh-cn/docs/one-command-deployment.html#SFTP</a></li></ul><p>开启覆盖操作只需要修改forceUpload为true即可</p><h3 id="Vercel"><a href="#Vercel" class="headerlink" title="Vercel"></a>Vercel</h3><p>默认的CICD会强制push就是严格模式</p><h3 id="Rsync"><a href="#Rsync" class="headerlink" title="Rsync"></a>Rsync</h3><ul><li>插件：hexo-deployer-rsync</li><li>配置：默认开启<code>delete</code>，即删除远程主机上的旧文件</li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Blog</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>严格上传测试</title>
+    <link href="/2025/04/18/%E4%B8%A5%E6%A0%BC%E4%B8%8A%E4%BC%A0%E6%B5%8B%E8%AF%95/"/>
+    <url>/2025/04/18/%E4%B8%A5%E6%A0%BC%E4%B8%8A%E4%BC%A0%E6%B5%8B%E8%AF%95/</url>
+    
+    <content type="html"><![CDATA[<p>严格上传，如果部署的时候没有删除掉这份文件，这当前这个部署模式的严格部署失败</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>博客搭建</title>
     <link href="/2025/04/13/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     <url>/2025/04/13/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>

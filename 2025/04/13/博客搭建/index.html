@@ -29,7 +29,7 @@
 <meta property="og:image" content="https://halofu.github.io/2025/04/13/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/Pasted-image-20250413001129.png">
 <meta property="og:image" content="https://halofu.github.io/2025/04/13/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/Pasted-image-20250413001310.png">
 <meta property="article:published_time" content="2025-04-12T19:29:00.000Z">
-<meta property="article:modified_time" content="2025-04-17T17:16:40.353Z">
+<meta property="article:modified_time" content="2025-04-18T10:57:13.265Z">
 <meta property="article:author" content="风鸣迎雪">
 <meta property="article:tag" content="Blog">
 <meta name="twitter:card" content="summary_large_image">
@@ -250,7 +250,7 @@
         
         
         
-          32 分钟
+          31 分钟
         
       </span>
     
@@ -564,6 +564,10 @@
 
 
 
+
+
+
+
 <h3 id="主题1：particle"><a href="#主题1：particle" class="headerlink" title="主题1：particle"></a>主题1：particle</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-built_in">cd</span> blog_hexo/themes<br>git <span class="hljs-built_in">clone</span> git@github.com:argvchs/hexo-theme-particlex.git particle --depth=1<br><span class="hljs-built_in">touch</span> ../_config.particle.yml<br></code></pre></td></tr></table></figure>
 
 <p>编辑<code>_config.yml</code>，修改主题为<code>particlex</code></p>
@@ -576,14 +580,14 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">let</span> language = [...i.<span class="hljs-property">classList</span>, ...i.<span class="hljs-property">firstChild</span>.<span class="hljs-property">classList</span>][<span class="hljs-number">0</span>] || <span class="hljs-string">&quot;plaintext&quot;</span>;<br><span class="hljs-comment">// 增加判断，将&quot;language-shell&quot; =&gt; &quot;shell&quot;</span><br><span class="hljs-keyword">if</span> (language.<span class="hljs-title function_">split</span>(<span class="hljs-string">&#x27;-&#x27;</span>).<span class="hljs-property">length</span> === <span class="hljs-number">2</span>)&#123;<br>    language = language.<span class="hljs-title function_">split</span>(<span class="hljs-string">&#x27;-&#x27;</span>)[<span class="hljs-number">1</span>]<br>&#125;<br><span class="hljs-keyword">let</span> highlighted;<br></code></pre></td></tr></table></figure>
 
 <p>然后就可以正常展示了</p>
-<h3 id="主题2：NexT"><a href="#主题2：NexT" class="headerlink" title="主题2：NexT"></a>主题2：NexT</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-built_in">cd</span> blog_hexo/themes<br>git submodule add git@github.com:theme-next/hexo-theme-next.git next<br><span class="hljs-built_in">touch</span> ../_config.next.yml<br></code></pre></td></tr></table></figure>
+<h3 id="主题2：NexT"><a href="#主题2：NexT" class="headerlink" title="主题2：NexT"></a>主题2：NexT</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-built_in">cd</span> blog_hexo/themes<br>git <span class="hljs-built_in">clone</span> git@github.com:theme-next/hexo-theme-next.git next<br><span class="hljs-built_in">touch</span> ../_config.next.yml<br></code></pre></td></tr></table></figure>
 
 <p>编辑<code>_config.yml</code>，修改主题为<code>next</code></p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">theme:</span> <span class="hljs-string">next</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="主题3：Fluid"><a href="#主题3：Fluid" class="headerlink" title="主题3：Fluid"></a>主题3：Fluid</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-built_in">cd</span> blog_hexo/themes<br>git submodule add git@github.com:fluid-dev/hexo-theme-fluid.git fluid<br><span class="hljs-built_in">touch</span> ../_config.fluid.yml<br></code></pre></td></tr></table></figure>
+<h3 id="主题3：Fluid"><a href="#主题3：Fluid" class="headerlink" title="主题3：Fluid"></a>主题3：Fluid</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-built_in">cd</span> blog_hexo/themes<br>git <span class="hljs-built_in">clone</span> git@github.com:fluid-dev/hexo-theme-fluid.git fluid<br><span class="hljs-built_in">touch</span> ../_config.fluid.yml<br></code></pre></td></tr></table></figure>
 
 <p>编辑<code>_config.yml</code>，修改主题为<code>fluid</code></p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">theme:</span> <span class="hljs-string">fluid</span><br></code></pre></td></tr></table></figure>
@@ -595,17 +599,7 @@
 
 
 
-<p>在线工具：</p>
-<blockquote>
-<p>图片压缩：<a target="_blank" rel="noopener" href="https://www.iloveimg.com/zh-cn/compress-image">https://www.iloveimg.com/zh-cn/compress-image</a></p>
-</blockquote>
-<p>Hexo 插件：</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/chenzhutian/hexo-all-minifier">hexo-all-minifier </a>: 压缩 Hexo 生成的文件</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink </a>: 通过 Hex 算法生成永久的文章链接</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/MoePlayer/hexo-tag-dplayer">hexo-tag-dplayer </a>: 可以在文章中插入视频 Tag</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/stevenjoezhang/live2d-widget">live2d-widget </a>: 在网页上加入 Live2D 看板娘</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-generator-feed">hexo-generator-feed </a>: 生成 Atom 1.0 or RSS 2.0 feed</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/jaredly/hexo-admin">hexo-admin </a>: 为 Hexo 搭建可视化管理页面</p>
+<p>由于主题是手动从github下载下来的，所以需要自己清理掉一些不用的文件，比如<code>.git</code>之类</p>
 <h2 id="开启评论功能"><a href="#开启评论功能" class="headerlink" title="开启评论功能"></a>开启评论功能</h2><h3 id="Gitalk"><a href="#Gitalk" class="headerlink" title="Gitalk"></a>Gitalk</h3><p>首先，您需要选择一个<strong>公开</strong>github存储库（已存在或创建一个新的github存储库）用于存储评论。</p>
 <p>然后需要创建 <strong>GitHub Application</strong>，如果没有 <a target="_blank" rel="noopener" href="https://github.com/settings/applications/new">点击这里申请</a></p>
 <p><code>homepage url</code>可以填插件的<code>gitalk</code>的仓库url</p>
@@ -706,9 +700,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/04/18/%E4%B8%A5%E6%A0%BC%E4%B8%8A%E4%BC%A0%E6%B5%8B%E8%AF%95/" title="严格上传测试">
+                      <a href="/2025/04/18/%E4%B8%A5%E6%A0%BC%E9%83%A8%E7%BD%B2/" title="严格部署">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">严格上传测试</span>
+                        <span class="hidden-mobile">严格部署</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     

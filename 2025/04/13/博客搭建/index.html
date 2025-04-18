@@ -29,14 +29,12 @@
 <meta property="og:image" content="https://halofu.github.io/2025/04/13/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/Pasted-image-20250413001129.png">
 <meta property="og:image" content="https://halofu.github.io/2025/04/13/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/Pasted-image-20250413001310.png">
 <meta property="article:published_time" content="2025-04-12T19:29:00.000Z">
-<meta property="article:modified_time" content="2025-04-14T12:07:21.783Z">
+<meta property="article:modified_time" content="2025-04-17T17:16:40.353Z">
 <meta property="article:author" content="风鸣迎雪">
 <meta property="article:tag" content="Blog">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://halofu.github.io/2025/04/13/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/Pasted-image-20250413001129.png">
   
-  
-    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>博客搭建 - 风鸣迎雪的博客</title>
@@ -260,12 +258,12 @@
     
     
       
-        <span id="busuanzi_container_page_pv" style="display: none">
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
           <i class="iconfont icon-eye" aria-hidden="true"></i>
-          <span id="busuanzi_value_page_pv"></span> 次
+          <span id="leancloud-page-views"></span> 次
         </span>
         
-
+      
       
     
   </div>
@@ -578,14 +576,14 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">let</span> language = [...i.<span class="hljs-property">classList</span>, ...i.<span class="hljs-property">firstChild</span>.<span class="hljs-property">classList</span>][<span class="hljs-number">0</span>] || <span class="hljs-string">&quot;plaintext&quot;</span>;<br><span class="hljs-comment">// 增加判断，将&quot;language-shell&quot; =&gt; &quot;shell&quot;</span><br><span class="hljs-keyword">if</span> (language.<span class="hljs-title function_">split</span>(<span class="hljs-string">&#x27;-&#x27;</span>).<span class="hljs-property">length</span> === <span class="hljs-number">2</span>)&#123;<br>    language = language.<span class="hljs-title function_">split</span>(<span class="hljs-string">&#x27;-&#x27;</span>)[<span class="hljs-number">1</span>]<br>&#125;<br><span class="hljs-keyword">let</span> highlighted;<br></code></pre></td></tr></table></figure>
 
 <p>然后就可以正常展示了</p>
-<h3 id="主题2：NexT"><a href="#主题2：NexT" class="headerlink" title="主题2：NexT"></a>主题2：NexT</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-built_in">cd</span> blog_hexo/themes<br>git <span class="hljs-built_in">clone</span> git@github.com:theme-next/hexo-theme-next.git next<br><span class="hljs-built_in">touch</span> ../_config.next.yml<br></code></pre></td></tr></table></figure>
+<h3 id="主题2：NexT"><a href="#主题2：NexT" class="headerlink" title="主题2：NexT"></a>主题2：NexT</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-built_in">cd</span> blog_hexo/themes<br>git submodule add git@github.com:theme-next/hexo-theme-next.git next<br><span class="hljs-built_in">touch</span> ../_config.next.yml<br></code></pre></td></tr></table></figure>
 
 <p>编辑<code>_config.yml</code>，修改主题为<code>next</code></p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">theme:</span> <span class="hljs-string">next</span><br></code></pre></td></tr></table></figure>
 
 
 
-<h3 id="主题3：Fluid"><a href="#主题3：Fluid" class="headerlink" title="主题3：Fluid"></a>主题3：Fluid</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-built_in">cd</span> blog_hexo/themes<br>git <span class="hljs-built_in">clone</span> git@github.com:fluid-dev/hexo-theme-fluid.git fluid<br><span class="hljs-built_in">touch</span> ../_config.fluid.yml<br></code></pre></td></tr></table></figure>
+<h3 id="主题3：Fluid"><a href="#主题3：Fluid" class="headerlink" title="主题3：Fluid"></a>主题3：Fluid</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-built_in">cd</span> blog_hexo/themes<br>git submodule add git@github.com:fluid-dev/hexo-theme-fluid.git fluid<br><span class="hljs-built_in">touch</span> ../_config.fluid.yml<br></code></pre></td></tr></table></figure>
 
 <p>编辑<code>_config.yml</code>，修改主题为<code>fluid</code></p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">theme:</span> <span class="hljs-string">fluid</span><br></code></pre></td></tr></table></figure>
@@ -633,6 +631,7 @@
 <p>优点：免费</p>
 <h3 id="valine"><a href="#valine" class="headerlink" title="valine"></a>valine</h3><p>选国际版的<code>leancloud</code>来注册，只需要验证邮箱就好了。创建好应用，将AppID、AppKey获取到配置文件即可。</p>
 <p>部署在本地会出现跨域问题，放到github page就好了</p>
+<p>​	</p>
 
                 
               </div>
@@ -676,7 +675,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2025年4月14日</div>
+          <div>2025年4月18日</div>
         </div>
       
       
@@ -727,24 +726,6 @@
   
     <article id="comments" lazyload>
       
-  <div id="gitalk-container"></div>
-  <script type="text/javascript">
-    Fluid.utils.loadComments('#gitalk-container', function() {
-      Fluid.utils.createCssLink('/css/gitalk.css')
-      Fluid.utils.createScript('https://lib.baomitu.com/gitalk/1.8.0/gitalk.min.js', function() {
-        var options = Object.assign(
-          {"clientID":"Ov23lip4bg31vV0V5MO9","clientSecret":"7cc41511a14c9be5bb2f54a6c39ad217b7f69a43","repo":"comment_gitalk","owner":"halofu","admin":["halofu"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","prpxy":"https://shielded-brushlands-08810.herokuapp.com/https://github.com/login/oauth/access_token"},
-          {
-            id: 'd93a19afa654655d32bafa25a2739156'
-          }
-        )
-        var gitalk = new Gitalk(options);
-        gitalk.render('gitalk-container');
-      });
-    });
-  </script>
-  <noscript>Please enable JavaScript to view the comments</noscript>
-
 
     </article>
   
@@ -852,16 +833,16 @@
 
   
     
-      <span id="busuanzi_container_site_pv" style="display: none">
+      <span id="leancloud-site-pv-container" style="display: none">
         总访问量 
-        <span id="busuanzi_value_site_pv"></span>
+        <span id="leancloud-site-pv"></span>
          次
       </span>
     
     
-      <span id="busuanzi_container_site_uv" style="display: none">
+      <span id="leancloud-site-uv-container" style="display: none">
         总访客数 
-        <span id="busuanzi_value_site_uv"></span>
+        <span id="leancloud-site-uv"></span>
          人
       </span>
     
@@ -1018,8 +999,6 @@
   <script defer src="/js/leancloud.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
-
-  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 

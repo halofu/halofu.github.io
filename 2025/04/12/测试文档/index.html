@@ -35,8 +35,6 @@
 <meta name="twitter:image" content="https://halofu.github.io/img/bg/page404.jpg">
   
   
-    <meta name="referrer" content="no-referrer-when-downgrade">
-  
   
   <title>测试文档 - 风鸣迎雪的博客</title>
 
@@ -259,12 +257,12 @@
     
     
       
-        <span id="busuanzi_container_page_pv" style="display: none">
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
           <i class="iconfont icon-eye" aria-hidden="true"></i>
-          <span id="busuanzi_value_page_pv"></span> 次
+          <span id="leancloud-page-views"></span> 次
         </span>
         
-
+      
       
     
   </div>
@@ -405,24 +403,6 @@
   
     <article id="comments" lazyload>
       
-  <div id="gitalk-container"></div>
-  <script type="text/javascript">
-    Fluid.utils.loadComments('#gitalk-container', function() {
-      Fluid.utils.createCssLink('/css/gitalk.css')
-      Fluid.utils.createScript('https://lib.baomitu.com/gitalk/1.8.0/gitalk.min.js', function() {
-        var options = Object.assign(
-          {"clientID":"Ov23lip4bg31vV0V5MO9","clientSecret":"7cc41511a14c9be5bb2f54a6c39ad217b7f69a43","repo":"comment_gitalk","owner":"halofu","admin":["halofu"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","prpxy":"https://shielded-brushlands-08810.herokuapp.com/https://github.com/login/oauth/access_token"},
-          {
-            id: '4127832e4820481f6e1bdf5e452e66ac'
-          }
-        )
-        var gitalk = new Gitalk(options);
-        gitalk.render('gitalk-container');
-      });
-    });
-  </script>
-  <noscript>Please enable JavaScript to view the comments</noscript>
-
 
     </article>
   
@@ -530,16 +510,16 @@
 
   
     
-      <span id="busuanzi_container_site_pv" style="display: none">
+      <span id="leancloud-site-pv-container" style="display: none">
         总访问量 
-        <span id="busuanzi_value_site_pv"></span>
+        <span id="leancloud-site-pv"></span>
          次
       </span>
     
     
-      <span id="busuanzi_container_site_uv" style="display: none">
+      <span id="leancloud-site-uv-container" style="display: none">
         总访客数 
-        <span id="busuanzi_value_site_uv"></span>
+        <span id="leancloud-site-uv"></span>
          人
       </span>
     
@@ -696,8 +676,6 @@
   <script defer src="/js/leancloud.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
-
-  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 
